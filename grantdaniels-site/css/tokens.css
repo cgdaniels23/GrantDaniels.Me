@@ -1,0 +1,147 @@
+/* ===================================================
+   DESIGN TOKENS — grantdaniels.me
+   Dark-first. Electric violet accent. Clash Display + Satoshi.
+   =================================================== */
+
+:root {
+  /* Type scale */
+  --text-xs:   clamp(0.75rem,  0.7rem  + 0.25vw, 0.875rem);
+  --text-sm:   clamp(0.875rem, 0.8rem  + 0.35vw, 1rem);
+  --text-base: clamp(1rem,     0.95rem + 0.25vw, 1.125rem);
+  --text-lg:   clamp(1.125rem, 1rem    + 0.75vw, 1.5rem);
+  --text-xl:   clamp(1.5rem,   1.2rem  + 1.25vw, 2.25rem);
+  --text-2xl:  clamp(2rem,     1.2rem  + 2.5vw,  3.5rem);
+  --text-3xl:  clamp(2.5rem,   1rem    + 4vw,    5rem);
+  --text-hero: clamp(3rem,     0.5rem  + 7vw,    8rem);
+
+  /* Spacing */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* Content widths */
+  --content-narrow:  640px;
+  --content-default: 960px;
+  --content-wide:    1200px;
+
+  /* Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-interactive: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:     cubic-bezier(0.4, 0, 1, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Fonts */
+  --font-display: 'Clash Display', 'Helvetica Neue', sans-serif;
+  --font-body:    'Satoshi', 'Inter', sans-serif;
+}
+
+/* DARK MODE (default) */
+:root, [data-theme="dark"] {
+  --color-bg:              #0a0a0b;
+  --color-surface:         #111113;
+  --color-surface-2:       #161618;
+  --color-surface-offset:  #1c1c1f;
+  --color-surface-dynamic: #242428;
+  --color-divider:         #1e1e22;
+  --color-border:          #2a2a2f;
+  --color-border-subtle:   #1f1f23;
+
+  --color-text:            #f0f0f2;
+  --color-text-muted:      #8a8a94;
+  --color-text-faint:      #4a4a52;
+  --color-text-inverse:    #0a0a0b;
+
+  /* Electric violet accent */
+  --color-primary:           #8b5cf6;
+  --color-primary-hover:     #a78bfa;
+  --color-primary-active:    #c4b5fd;
+  --color-primary-highlight: #1e1730;
+  --color-primary-glow:      rgba(139, 92, 246, 0.15);
+  --color-primary-glow-lg:   rgba(139, 92, 246, 0.08);
+
+  --color-success: #4ade80;
+  --color-error:   #f87171;
+  --color-warning: #fb923c;
+
+  --shadow-sm: 0 1px 2px  rgba(0,0,0,0.4);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.5);
+  --shadow-lg: 0 12px 32px rgba(0,0,0,0.6);
+  --shadow-glow: 0 0 40px rgba(139,92,246,0.2);
+}
+
+/* LIGHT MODE */
+[data-theme="light"] {
+  --color-bg:              #f8f8fa;
+  --color-surface:         #ffffff;
+  --color-surface-2:       #f3f3f6;
+  --color-surface-offset:  #ececf1;
+  --color-surface-dynamic: #e4e4eb;
+  --color-divider:         #e0e0e8;
+  --color-border:          #d4d4de;
+  --color-border-subtle:   #eaeaef;
+
+  --color-text:            #0f0f14;
+  --color-text-muted:      #6b6b7a;
+  --color-text-faint:      #b0b0be;
+  --color-text-inverse:    #f8f8fa;
+
+  --color-primary:           #7c3aed;
+  --color-primary-hover:     #6d28d9;
+  --color-primary-active:    #5b21b6;
+  --color-primary-highlight: #ede9fe;
+  --color-primary-glow:      rgba(124, 58, 237, 0.12);
+  --color-primary-glow-lg:   rgba(124, 58, 237, 0.06);
+
+  --color-success: #16a34a;
+  --color-error:   #dc2626;
+  --color-warning: #ea580c;
+
+  --shadow-sm: 0 1px 2px  rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+  --shadow-lg: 0 12px 32px rgba(0,0,0,0.12);
+  --shadow-glow: 0 0 40px rgba(124,58,237,0.12);
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) {
+    --color-bg:              #f8f8fa;
+    --color-surface:         #ffffff;
+    --color-surface-2:       #f3f3f6;
+    --color-surface-offset:  #ececf1;
+    --color-surface-dynamic: #e4e4eb;
+    --color-divider:         #e0e0e8;
+    --color-border:          #d4d4de;
+    --color-border-subtle:   #eaeaef;
+    --color-text:            #0f0f14;
+    --color-text-muted:      #6b6b7a;
+    --color-text-faint:      #b0b0be;
+    --color-text-inverse:    #f8f8fa;
+    --color-primary:           #7c3aed;
+    --color-primary-hover:     #6d28d9;
+    --color-primary-active:    #5b21b6;
+    --color-primary-highlight: #ede9fe;
+    --color-primary-glow:      rgba(124, 58, 237, 0.12);
+    --color-primary-glow-lg:   rgba(124, 58, 237, 0.06);
+    --shadow-sm: 0 1px 2px  rgba(0,0,0,0.06);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+    --shadow-lg: 0 12px 32px rgba(0,0,0,0.12);
+    --shadow-glow: 0 0 40px rgba(124,58,237,0.12);
+  }
+}

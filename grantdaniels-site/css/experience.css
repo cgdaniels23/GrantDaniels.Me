@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience — Grant Daniels</title>
+  <meta name="description" content="Work history and professional background — Grant Daniels, founder, CMO, and sales and marketing leader with 15+ years of experience based in Austin, TX." />
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/interior.css" />
+</head>
+<body>
+
+<header class="nav" role="banner">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="28" height="28" rx="6" fill="var(--color-primary)" opacity="0.12"/>
+        <path d="M7 14.5C7 10.358 10.358 7 14.5 7C16.96 7 19.14 8.19 20.5 10.04L17.8 11.6C16.97 10.62 15.79 10 14.5 10C12.015 10 10 12.015 10 14.5C10 16.985 12.015 19 14.5 19C16.13 19 17.56 18.12 18.36 16.8H14.5V14H21.5V14.5C21.5 18.642 18.142 22 14 22C9.858 22 7 18.642 7 14.5Z" fill="var(--color-primary)"/>
+      </svg>
+      Grant Daniels
+    </a>
+    <nav aria-label="Main navigation">
+      <ul class="nav__links" role="list">
+        <li><a href="index.html"      class="nav__link">Home</a></li>
+        <li><a href="portfolio.html"  class="nav__link">Portfolio</a></li>
+        <li><a href="skills.html"     class="nav__link">Skills</a></li>
+        <li><a href="experience.html" class="nav__link">Experience</a></li>
+        <li><a href="blog.html"       class="nav__link">Blog</a></li>
+      </ul>
+    </nav>
+    <div class="nav__actions">
+      <button class="nav__theme-btn" data-theme-toggle aria-label="Toggle theme"></button>
+      <a href="mailto:grant@grantdaniels.me" class="nav__cta">Get in touch</a>
+    </div>
+    <button class="nav__hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="nav__mobile-menu">
+  <a href="index.html"      class="nav__link">Home</a>
+  <a href="portfolio.html"  class="nav__link">Portfolio</a>
+  <a href="skills.html"     class="nav__link">Skills</a>
+  <a href="experience.html" class="nav__link">Experience</a>
+  <a href="blog.html"       class="nav__link">Blog</a>
+  <a href="mailto:grant@grantdaniels.me" class="nav__cta btn btn--primary">Get in touch</a>
+</div>
+
+<main id="main">
+
+  <div class="page-header">
+    <div class="container">
+      <p class="section-label">Background</p>
+      <h1 class="page-title fade-in">Experience</h1>
+      <p class="page-subtitle fade-in">Fifteen years of sales and marketing. I've led pipeline, managed accounts, built brands, and run entire marketing functions. The software came later — because I got tired of waiting for tools that actually worked the way I think.</p>
+    </div>
+  </div>
+
+  <section class="section" aria-label="Work history">
+    <div class="container container--narrow">
+      <div class="timeline">
+
+        <!-- Cosmos Labs -->
+        <article class="timeline-item fade-in" aria-labelledby="exp-cosmos-heading">
+          <div class="timeline-item__meta">
+            <span class="tag tag--accent">Current</span>
+            <span class="timeline-item__date">2024 — Present</span>
+          </div>
+          <h2 id="exp-cosmos-heading">Founder</h2>
+          <span class="timeline-item__company">Cosmos Labs · Austin, TX</span>
+          <p>Building a suite of business tools designed around the way sales and marketing teams actually operate. The product vision comes from 15 years of living inside broken CRMs, disconnected pipelines, and marketing stacks that couldn't tell you what was actually working. I use AI to build the software — not because I'm a developer, but because I finally had the tools to stop waiting for someone else to build it.</p>
+          <ul class="timeline-item__highlights" role="list">
+            <li>Designed Liquid Cosmos CRM from the ground up — built around revenue attribution and the relationship between content and closed deals</li>
+            <li>Created Cosmos Comm for secure, self-hosted team communications without the enterprise price tag</li>
+            <li>Cosmos Calendar sits at the center of the suite — every pipeline signal, every AI decision surfaces through it</li>
+            <li>Product direction, positioning, and go-to-market strategy across the entire Liquid Cosmos suite</li>
+            <li>Self-hosted infrastructure — running everything on private servers because I've always believed your data should be yours</li>
+          </ul>
+        </article>
+
+        <!-- The Lube Club / Tender Lovin Care -->
+        <article class="timeline-item fade-in" aria-labelledby="exp-tlc-heading">
+          <div class="timeline-item__meta">
+            <span class="timeline-item__date">Oct 2024 — Present</span>
+          </div>
+          <h2 id="exp-tlc-heading">Chief Marketing Officer</h2>
+          <span class="timeline-item__company">The Lube Club / Tender Lovin Care · Austin, TX</span>
+          <p>Executive-level marketing leadership for a growing service brand. Responsible for the full marketing function — strategy, execution, stack, and team. Brought a systems-thinking approach to a category that typically runs on intuition and ad spend.</p>
+          <ul class="timeline-item__highlights" role="list">
+            <li>Built and managed the end-to-end marketing stack from scratch — CRM, attribution, automation, and analytics</li>
+            <li>Developed brand positioning and go-to-market strategy for market expansion</li>
+            <li>Implemented performance marketing frameworks and lead pipeline architecture</li>
+            <li>Oversaw digital presence, content strategy, and campaign execution across channels</li>
+          </ul>
+        </article>
+
+        <!-- Opcity -->
+        <article class="timeline-item fade-in" aria-labelledby="exp-opcity-heading">
+          <div class="timeline-item__meta">
+            <span class="timeline-item__date">Prior</span>
+          </div>
+          <h2 id="exp-opcity-heading">Account Executive</h2>
+          <span class="timeline-item__company">Opcity (acquired by Realtor.com) · Austin, TX</span>
+          <p>Enterprise sales at a real estate technology platform that matched pre-qualified leads to top-producing agents and brokers. Managed a portfolio of enterprise accounts, drove adoption, and maintained retention in a competitive market. Developed the relationship management discipline that eventually shaped Liquid Cosmos CRM's design philosophy.</p>
+          <ul class="timeline-item__highlights" role="list">
+            <li>Managed relationships with top-tier real estate agents and brokers across a high-value account portfolio</li>
+            <li>Drove adoption and expansion revenue within existing accounts</li>
+            <li>Developed an instinct for relationship-driven sales that later became foundational to Liquid Cosmos CRM design</li>
+          </ul>
+        </article>
+
+        <!-- Consulting -->
+        <article class="timeline-item fade-in" aria-labelledby="exp-consulting-heading">
+          <div class="timeline-item__meta">
+            <span class="timeline-item__date">Ongoing</span>
+          </div>
+          <h2 id="exp-consulting-heading">Independent Consultant</h2>
+          <span class="timeline-item__company">Self-employed · Austin, TX</span>
+          <p>Marketing and sales consulting for founders and growing teams. I come in when the pipeline is broken, the attribution is a mystery, or the marketing stack has become a science experiment nobody understands. Most clients find me through referral — and most stay long-term because I don't hand them a deck and disappear.</p>
+          <ul class="timeline-item__highlights" role="list">
+            <li>Marketing stack audits and rebuilds — attribution, lead pipeline, analytics, automation</li>
+            <li>CRM strategy, selection, and implementation for founder-led businesses</li>
+            <li>Revenue intelligence consulting — helping teams understand which content, campaigns, and channels actually drive closed revenue</li>
+            <li>Go-to-market strategy for early-stage and scaling companies</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education / Interests strip -->
+  <section class="section--sm" aria-labelledby="other-heading">
+    <div class="container container--narrow">
+      <hr class="gradient-line" style="margin-bottom: var(--space-12);" />
+      <div class="exp-other fade-in">
+        <div class="exp-other__col">
+          <p class="section-label">Outside the work</p>
+          <h2 id="other-heading" style="font-size: var(--text-lg); font-weight: 600; margin-bottom: var(--space-4);">Other things worth knowing</h2>
+          <p style="font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.75; margin-bottom: var(--space-3);">Astrophotographer with a focus on deep-sky imaging under dark Texas skies. I track atmospheric conditions and moon phases obsessively enough that I eventually built software to do it better.</p>
+          <p style="font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.75; margin-bottom: var(--space-3);">Regular gym work — strength training, circuit training — and fitness tracking via Apple Watch integration I built myself.</p>
+          <p style="font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.75;">Combined-type ADHD, diagnosed. I've written about what that means for how I work and build — you can find that on the blog.</p>
+        </div>
+        <div class="exp-other__col">
+          <p class="section-label">Currently reading / exploring</p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-3);" role="list">
+            <li style="font-size: var(--text-sm); color: var(--color-text-muted); padding-left: var(--space-5); position: relative;">
+              <span style="position: absolute; left: 0; top: 10px; width: 6px; height: 1px; background: var(--color-primary); display: block;"></span>
+              Advanced encryption patterns and field-level data security
+            </li>
+            <li style="font-size: var(--text-sm); color: var(--color-text-muted); padding-left: var(--space-5); position: relative;">
+              <span style="position: absolute; left: 0; top: 10px; width: 6px; height: 1px; background: var(--color-primary); display: block;"></span>
+              Multi-agent orchestration architecture at scale
+            </li>
+            <li style="font-size: var(--text-sm); color: var(--color-text-muted); padding-left: var(--space-5); position: relative;">
+              <span style="position: absolute; left: 0; top: 10px; width: 6px; height: 1px; background: var(--color-primary); display: block;"></span>
+              Performance optimization for Next.js on self-hosted infra
+            </li>
+            <li style="font-size: var(--text-sm); color: var(--color-text-muted); padding-left: var(--space-5); position: relative;">
+              <span style="position: absolute; left: 0; top: 10px; width: 6px; height: 1px; background: var(--color-primary); display: block;"></span>
+              Dark sky conditions modeling and computational astronomy
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__inner">
+      <p class="footer__copy">&copy; 2026 Grant Daniels. Austin, TX.</p>
+      <ul class="footer__links" role="list">
+        <li><a href="portfolio.html"  class="footer__link">Portfolio</a></li>
+        <li><a href="blog.html"       class="footer__link">Blog</a></li>
+        <li><a href="https://linkedin.com/in/grantdaniels" class="footer__link" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/grantdaniels"      class="footer__link" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="mailto:grant@grantdaniels.me"         class="footer__link">Email</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script src="js/nav.js" defer></script>
+<style>
+.exp-other { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(var(--space-10), 6vw, var(--space-16)); }
+@media (max-width: 640px) { .exp-other { grid-template-columns: 1fr; } }
+</style>
+</body>
+</html>
