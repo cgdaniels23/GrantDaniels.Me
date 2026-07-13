@@ -80,26 +80,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="product-hero__bg" aria-hidden="true"></div>
     <div class="container product-hero__inner">
       <div class="product-hero__content">
-        <p class="section-label">Case Study · Personal Project · 2026</p>
+        <div class="product-hero__badges">
+          <span class="badge badge--muted">Case Study · 2026</span>
+          <span class="badge badge--gated">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Access by request only
+          </span>
+        </div>
         <h1 class="product-hero__title fade-in" id="product-hero-heading">
           Gym Daddy.<br>
-          <span class="product-hero__title--accent">Log a set in three taps.</span>
+          <span class="product-hero__title--accent">Throw the notebook away.</span>
         </h1>
         <p class="product-hero__lead fade-in">
-          A workout tracking PWA I built in ninety minutes because every existing option was either too simple, too cluttered, or locked behind a subscription. Installs to your home screen like a native app. Works offline. Data stays on your device.
+          A dead-simple workout tracker for people who just want to keep their numbers straight. Log your sets, watch your lifts trend up over time, know you're actually on track. No paper notebook. No subscription. No learning curve.
+        </p>
+        <p class="product-hero__note fade-in">
+          Gym Daddy is not publicly released. The interactive demo below runs the real app inside a sandbox, but installing it to your own device is by request. <a href="mailto:grant@grantdaniels.me?subject=Gym%20Daddy%20access%20request" class="inline-link">Email me if you want access.</a>
         </p>
         <div class="product-hero__actions fade-in">
-          <a href="https://cgdaniels23.github.io/gym-daddy/" class="btn btn--primary" target="_blank" rel="noopener">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
-            Open the live app
+          <a href="mailto:grant@grantdaniels.me?subject=Gym%20Daddy%20access%20request&body=Hey%20Grant%20—%20I%27d%20love%20to%20try%20Gym%20Daddy.%20Here%27s%20a%20bit%20about%20me%3A%20" class="btn btn--primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Request access
           </a>
-          <a href="https://github.com/cgdaniels23/gym-daddy" class="btn btn--outline" target="_blank" rel="noopener">
+          <a href="#demo" class="btn btn--outline">
+            Try the interactive demo
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+          </a>
+          <a href="https://github.com/cgdaniels23/gym-daddy" class="btn btn--ghost" target="_blank" rel="noopener">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
             View the code
-          </a>
-          <a href="#demo" class="btn btn--ghost">
-            Try the demo below
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
           </a>
         </div>
         <div class="product-hero__stack fade-in">
@@ -141,10 +150,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <!-- Mobile fallback -->
         <div class="product-demo__mobile-fallback">
-          <p>The embedded demo is optimized for desktop. On mobile, launch the real app for the best experience.</p>
-          <a href="https://cgdaniels23.github.io/gym-daddy/" class="btn btn--primary" target="_blank" rel="noopener">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
-            Open Gym Daddy
+          <p>The embedded demo is optimized for desktop. On mobile, the best way to experience Gym Daddy is on your own home screen — which is by request.</p>
+          <a href="mailto:grant@grantdaniels.me?subject=Gym%20Daddy%20access%20request" class="btn btn--primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Request access
+          </a>
+        </div>
+
+        <!-- Access gate callout -->
+        <div class="access-callout fade-in">
+          <div class="access-callout__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <div class="access-callout__body">
+            <h3>Want it on your phone?</h3>
+            <p>Gym Daddy isn't publicly listed. If you want the install link so it can live on your home screen, drop me a line and tell me a bit about how you'd use it.</p>
+          </div>
+          <a href="mailto:grant@grantdaniels.me?subject=Gym%20Daddy%20access%20request&body=Hey%20Grant%20—%20I%27d%20love%20to%20try%20Gym%20Daddy.%20Here%27s%20a%20bit%20about%20me%3A%20" class="btn btn--primary">
+            Request access
           </a>
         </div>
       </div>
@@ -155,16 +178,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <section class="section product-story" aria-labelledby="problem-heading">
     <div class="container container--narrow">
       <p class="section-label">The problem</p>
-      <h2 class="fade-in" id="problem-heading">Every gym app is either too much or too little.</h2>
+      <h2 class="fade-in" id="problem-heading">Everyone's still carrying paper notebooks to the gym.</h2>
       <div class="product-story__body fade-in">
-        <p>I've been lifting seriously for years. My phone is where I track sets between rests — a rest is 60 to 90 seconds. If I can't log a set in three taps, the app is broken.</p>
-        <p>What's on the market:</p>
+        <p>Go to any gym and you'll see it — guys hunched over spiral notebooks between sets, squinting at last week's numbers, trying to remember what they hit. It works, but it's a hassle. Pages get sweaty. Notebooks get lost. Nobody's actually looking back at what they wrote three months ago.</p>
+        <p>The alternative is worse:</p>
         <ul class="project-list" role="list">
-          <li><strong>Strong, Hevy, FitNotes</strong> — good, but they gate templates, history, or Apple Watch behind subscriptions. Pay to log your own workouts? Weird.</li>
-          <li><strong>Apple Fitness / Notes / Sheets</strong> — free, but fifteen taps to get a rep count in.</li>
-          <li><strong>Trainerize, TrainHeroic</strong> — full trainer-suite platforms. Way too much for a solo lifter, and clunky when you're the person actually doing the workout.</li>
+          <li><strong>Existing gym apps</strong> — most gate the basic stuff behind a subscription. Pay a monthly fee to log your own workouts? Weird.</li>
+          <li><strong>Apple Notes, spreadsheets, Fitness</strong> — free, but so clunky you stop using them by week two.</li>
+          <li><strong>Full trainer platforms</strong> — way too much app for someone who just wants to remember what they benched last Tuesday.</li>
         </ul>
-        <p>I wanted something that opened in half a second, remembered what I did last time, and let me tap-tap-tap through a set without losing my rhythm. So I built it.</p>
+        <p>So I built the app I actually wanted. Open it, tap in your set, close it. Look at your trend line whenever you want proof you're moving in the right direction. That's the whole thing.</p>
       </div>
     </div>
   </section>
