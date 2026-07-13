@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5K4TQ8HH');</script>
+<!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gym Daddy — A PWA Case Study by Grant Daniels</title>
+  <meta name="description" content="A workout tracking PWA built in 90 minutes. Full case study: problem, process, tech stack, and a live interactive demo you can try in your browser." />
+  <meta property="og:title" content="Gym Daddy — Workout Tracking PWA" />
+  <meta property="og:description" content="A workout tracking PWA built in 90 minutes. Case study + live interactive demo by Grant Daniels." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://grantdaniels.me/images/gym-daddy.png" />
+  <link rel="canonical" href="https://grantdaniels.me/products/gym-daddy.html" />
+
+  <!-- Fonts -->
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/tokens.css" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/interior.css" />
+  <link rel="stylesheet" href="../css/product.css" />
+  <script src="https://analytics.ahrefs.com/analytics.js" data-key="v5to2Ix5Uvb7m+JcfCqwuA" async></script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5K4TQ8HH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- ===== NAV ===== -->
+<header class="nav" role="banner">
+  <div class="nav__inner">
+    <a href="../index.html" class="nav__logo" aria-label="Grant Daniels Home">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="28" height="28" rx="6" fill="var(--color-primary)" opacity="0.12"/>
+        <path d="M7 14.5C7 10.358 10.358 7 14.5 7C16.96 7 19.14 8.19 20.5 10.04L17.8 11.6C16.97 10.62 15.79 10 14.5 10C12.015 10 10 12.015 10 14.5C10 16.985 12.015 19 14.5 19C16.13 19 17.56 18.12 18.36 16.8H14.5V14H21.5V14.5C21.5 18.642 18.142 22 14 22C9.858 22 7 18.642 7 14.5Z" fill="var(--color-primary)"/>
+      </svg>
+      Grant Daniels
+    </a>
+    <nav aria-label="Main navigation">
+      <ul class="nav__links" role="list">
+        <li><a href="../index.html"      class="nav__link">Home</a></li>
+        <li><a href="../portfolio.html"  class="nav__link">Portfolio</a></li>
+        <li><a href="../skills.html"     class="nav__link">Skills</a></li>
+        <li><a href="../experience.html" class="nav__link">Experience</a></li>
+        <li><a href="../blog.html"       class="nav__link">Blog</a></li>
+      </ul>
+    </nav>
+    <div class="nav__actions">
+      <button class="nav__theme-btn" data-theme-toggle aria-label="Toggle theme"></button>
+      <a href="mailto:grant@grantdaniels.me" class="nav__cta">Get in touch</a>
+    </div>
+    <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav__mobile-menu" aria-label="Mobile navigation">
+  <a href="../index.html"      class="nav__link">Home</a>
+  <a href="../portfolio.html"  class="nav__link">Portfolio</a>
+  <a href="../skills.html"     class="nav__link">Skills</a>
+  <a href="../experience.html" class="nav__link">Experience</a>
+  <a href="../blog.html"       class="nav__link">Blog</a>
+  <a href="mailto:grant@grantdaniels.me" class="nav__cta btn btn--primary">Get in touch</a>
+</div>
+
+<main id="main">
+
+  <!-- ===== PRODUCT HERO ===== -->
+  <section class="product-hero" aria-labelledby="product-hero-heading">
+    <div class="product-hero__bg" aria-hidden="true"></div>
+    <div class="container product-hero__inner">
+      <div class="product-hero__content">
+        <p class="section-label">Case Study · Personal Project · 2026</p>
+        <h1 class="product-hero__title fade-in" id="product-hero-heading">
+          Gym Daddy.<br>
+          <span class="product-hero__title--accent">Log a set in three taps.</span>
+        </h1>
+        <p class="product-hero__lead fade-in">
+          A workout tracking PWA I built in ninety minutes because every existing option was either too simple, too cluttered, or locked behind a subscription. Installs to your home screen like a native app. Works offline. Data stays on your device.
+        </p>
+        <div class="product-hero__actions fade-in">
+          <a href="https://cgdaniels23.github.io/gym-daddy/" class="btn btn--primary" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+            Open the live app
+          </a>
+          <a href="https://github.com/cgdaniels23/gym-daddy" class="btn btn--outline" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            View the code
+          </a>
+          <a href="#demo" class="btn btn--ghost">
+            Try the demo below
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+          </a>
+        </div>
+        <div class="product-hero__stack fade-in">
+          <span class="product-hero__stack-label">Built with</span>
+          <div class="product-hero__stack-tags">
+            <span class="tag">Vite</span>
+            <span class="tag">React</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">PWA</span>
+            <span class="tag">localStorage</span>
+            <span class="tag">GitHub Pages</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LIVE DEMO ===== -->
+  <section class="section product-demo" id="demo" aria-labelledby="demo-heading">
+    <div class="container">
+      <p class="section-label">Live demo</p>
+      <h2 class="fade-in" id="demo-heading">Try it right here.</h2>
+      <p class="product-demo__lead fade-in">This is the actual production app running inside a phone frame. Tap around. Start a workout. Log a set. Everything works — it uses localStorage so your data stays in your browser sandbox and won't touch mine.</p>
+
+      <div class="product-demo__stage fade-in">
+        <!-- iPhone frame with iframe embed -->
+        <div class="phone-frame" aria-label="Interactive Gym Daddy demo">
+          <div class="phone-frame__notch" aria-hidden="true"></div>
+          <div class="phone-frame__screen">
+            <iframe
+              src="https://cgdaniels23.github.io/gym-daddy/"
+              title="Gym Daddy live demo"
+              loading="lazy"
+              allow="clipboard-read; clipboard-write"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="phone-frame__button" aria-hidden="true"></div>
+        </div>
+
+        <!-- Mobile fallback -->
+        <div class="product-demo__mobile-fallback">
+          <p>The embedded demo is optimized for desktop. On mobile, launch the real app for the best experience.</p>
+          <a href="https://cgdaniels23.github.io/gym-daddy/" class="btn btn--primary" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+            Open Gym Daddy
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== THE PROBLEM ===== -->
+  <section class="section product-story" aria-labelledby="problem-heading">
+    <div class="container container--narrow">
+      <p class="section-label">The problem</p>
+      <h2 class="fade-in" id="problem-heading">Every gym app is either too much or too little.</h2>
+      <div class="product-story__body fade-in">
+        <p>I've been lifting seriously for years. My phone is where I track sets between rests — a rest is 60 to 90 seconds. If I can't log a set in three taps, the app is broken.</p>
+        <p>What's on the market:</p>
+        <ul class="project-list" role="list">
+          <li><strong>Strong, Hevy, FitNotes</strong> — good, but they gate templates, history, or Apple Watch behind subscriptions. Pay to log your own workouts? Weird.</li>
+          <li><strong>Apple Fitness / Notes / Sheets</strong> — free, but fifteen taps to get a rep count in.</li>
+          <li><strong>Trainerize, TrainHeroic</strong> — full trainer-suite platforms. Way too much for a solo lifter, and clunky when you're the person actually doing the workout.</li>
+        </ul>
+        <p>I wanted something that opened in half a second, remembered what I did last time, and let me tap-tap-tap through a set without losing my rhythm. So I built it.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS ===== -->
+  <section class="section product-story product-story--offset" aria-labelledby="process-heading">
+    <div class="container container--narrow">
+      <p class="section-label">The process</p>
+      <h2 class="fade-in" id="process-heading">Ninety minutes from empty repo to installed on my phone.</h2>
+      <div class="product-story__body fade-in">
+        <p>This was an intentional constraint. Not "how good can I make a workout app in a week." How functional can I make one in the time it takes to watch a movie.</p>
+
+        <div class="process-timeline">
+          <div class="process-step">
+            <span class="process-step__marker">00:00</span>
+            <div>
+              <h3>Scaffolding</h3>
+              <p>Vite + React + TypeScript. Tailwind stripped out for hand-written CSS — small enough app that a design system was overhead I didn't need. Set the base color palette (deep space navy, electric purple, cyan) so it wouldn't feel like generic AI slop.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <span class="process-step__marker">00:15</span>
+            <div>
+              <h3>Data model</h3>
+              <p>An <code>Exercise</code>, a <code>Workout</code>, and a <code>Set</code>. Persisted to <code>localStorage</code> via a tiny store hook using <code>useSyncExternalStore</code>. Seeded twenty common exercises so day-one usage doesn't require setup.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <span class="process-step__marker">00:35</span>
+            <div>
+              <h3>Core flow</h3>
+              <p>Four screens: Home dashboard, Start Workout, Active Session, Complete. Every screen designed around the "three taps to log a set" test. Started the session UI with a big weight/reps stepper and a chunky "Log Set" button — no keyboards, no dropdowns.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <span class="process-step__marker">01:05</span>
+            <div>
+              <h3>Add Exercise drawer + history</h3>
+              <p>Bottom-sheet drawer for adding exercises mid-workout — same interaction pattern as iOS share sheets, so it feels native. History view shows recent workouts with total volume.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <span class="process-step__marker">01:20</span>
+            <div>
+              <h3>PWA manifest + service worker</h3>
+              <p>Icons at every iOS-required size, standalone display mode, offline-first service worker. Added to home screen from Safari and it launches like a native app — no browser chrome.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <span class="process-step__marker">01:30</span>
+            <div>
+              <h3>Shipped</h3>
+              <p>Pushed to GitHub, enabled Pages, wired up a Vite deploy workflow. Live at cgdaniels23.github.io/gym-daddy — installed on my phone before I finished my next set.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TECH DECISIONS ===== -->
+  <section class="section product-story" aria-labelledby="tech-heading">
+    <div class="container container--narrow">
+      <p class="section-label">Tech decisions</p>
+      <h2 class="fade-in" id="tech-heading">Every choice was picked for speed of shipping.</h2>
+      <div class="product-story__body fade-in">
+        <dl class="tech-decisions">
+          <div class="tech-decision">
+            <dt>Vite over Next.js</dt>
+            <dd>No routing, no SSR, no API layer needed. Vite gives me a fast dev server and a static bundle. That's it. Next.js would have been over-engineering.</dd>
+          </div>
+          <div class="tech-decision">
+            <dt>localStorage over IndexedDB or a backend</dt>
+            <dd>Zero backend means zero cost, zero auth, zero data-handling liability. Workouts are user-scoped anyway — no need for a server to see them. Trade-off: no sync between devices. Fine for v1.</dd>
+          </div>
+          <div class="tech-decision">
+            <dt>PWA over React Native or Swift</dt>
+            <dd>App Store review is a two-week detour for a personal tool. PWA installs to the home screen in one tap and runs anywhere. No developer account required.</dd>
+          </div>
+          <div class="tech-decision">
+            <dt>useSyncExternalStore over Redux / Zustand</dt>
+            <dd>The whole store is thirty lines of code. Bringing in state management would be more infrastructure than app.</dd>
+          </div>
+          <div class="tech-decision">
+            <dt>GitHub Pages over Vercel / Netlify</dt>
+            <dd>Free static hosting with a workflow that auto-deploys on push. The repo itself is the deploy pipeline.</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SCREENSHOTS ===== -->
+  <section class="section product-screenshots" aria-labelledby="screens-heading">
+    <div class="container">
+      <p class="section-label">Screens</p>
+      <h2 class="fade-in" id="screens-heading">The app end-to-end.</h2>
+      <div class="screenshot-grid fade-in">
+        <figure class="screenshot">
+          <div class="screenshot__frame">
+            <img src="../images/gym-daddy.png" alt="Gym Daddy home dashboard with recent workouts and PR summary" loading="lazy" />
+          </div>
+          <figcaption>Home dashboard — recent workouts, streak, and a big "Start Workout" button.</figcaption>
+        </figure>
+        <figure class="screenshot">
+          <div class="screenshot__frame screenshot__frame--placeholder">
+            <span>Active session</span>
+          </div>
+          <figcaption>Active session — weight/reps stepper and a chunky "Log Set" button. Rest timer runs automatically between sets.</figcaption>
+        </figure>
+        <figure class="screenshot">
+          <div class="screenshot__frame screenshot__frame--placeholder">
+            <span>Add exercise</span>
+          </div>
+          <figcaption>Add-exercise drawer — bottom-sheet interaction pattern that feels native to iOS.</figcaption>
+        </figure>
+        <figure class="screenshot">
+          <div class="screenshot__frame screenshot__frame--placeholder">
+            <span>Complete</span>
+          </div>
+          <figcaption>Workout complete — total volume, duration, and a summary you can screenshot for the group chat.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHAT'S NEXT ===== -->
+  <section class="section product-story product-story--offset" aria-labelledby="next-heading">
+    <div class="container container--narrow">
+      <p class="section-label">What's next</p>
+      <h2 class="fade-in" id="next-heading">Trainer/trainee mode.</h2>
+      <div class="product-story__body fade-in">
+        <p>The next version turns Gym Daddy into a two-sided app: a <strong>trainer</strong> builds weekly program templates and assigns them to clients. A <strong>trainee</strong> logs their sets against those targets in real time. The trainer can watch each set land as it happens.</p>
+        <p>Planned stack additions:</p>
+        <ul class="project-list" role="list">
+          <li>Supabase for auth, program templates, and realtime set streaming</li>
+          <li>Magic-link login plus Sign in with Apple</li>
+          <li>Weekly repeating program templates the trainer builds once and assigns to many clients</li>
+          <li>Realtime "trainer watches sets land" via Supabase Realtime channels</li>
+        </ul>
+        <p>Same three-tap discipline. Same PWA install. Just multi-user.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-strip section--sm" aria-labelledby="cta-heading">
+    <div class="container">
+      <div class="cta-strip__inner fade-in">
+        <div class="cta-strip__glow" aria-hidden="true"></div>
+        <h2 id="cta-heading">Want something similar built for your problem?</h2>
+        <p>I take on a small number of consulting engagements at a time — AI systems, revenue intelligence builds, full-stack apps. If you've got something worth shipping in ninety minutes (or ninety days), let's talk.</p>
+        <div class="cta-strip__actions">
+          <a href="mailto:grant@grantdaniels.me" class="btn btn--primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            grant@grantdaniels.me
+          </a>
+          <a href="../portfolio.html" class="btn btn--outline">
+            See more work
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__inner">
+      <p class="footer__copy">&copy; 2026 Grant Daniels. Austin, TX.</p>
+      <ul class="footer__links" role="list">
+        <li><a href="../portfolio.html"  class="footer__link">Portfolio</a></li>
+        <li><a href="../blog.html"       class="footer__link">Blog</a></li>
+        <li><a href="https://linkedin.com/in/grantdaniels" class="footer__link" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/cgdaniels23"       class="footer__link" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="mailto:grant@grantdaniels.me"         class="footer__link">Email</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/nav.js" defer></script>
+</body>
+</html>
