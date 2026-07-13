@@ -222,6 +222,11 @@
   color: var(--color-primary);
   border-color: transparent;
 }
+.tag--teal {
+  background: var(--color-accent-highlight);
+  color: var(--color-accent);
+  border-color: transparent;
+}
 
 /* ---- CARDS ---- */
 .card {
@@ -239,11 +244,25 @@
   text-decoration: none;
   display: block;
 }
+.card--interactive {
+  position: relative;
+}
+.card--interactive::after {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-sheen-strong), transparent);
+  opacity: 0;
+  transition: opacity var(--transition-interactive);
+  pointer-events: none;
+}
 .card--interactive:hover {
   border-color: var(--color-primary);
   box-shadow: 0 0 0 1px var(--color-primary), var(--shadow-md);
   transform: translateY(-3px);
 }
+.card--interactive:hover::after { opacity: 1; }
 .card--interactive:active { transform: translateY(-1px); }
 
 /* ---- SECTION LABEL ---- */
@@ -255,7 +274,7 @@
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--color-primary);
+  color: var(--color-accent);
   margin-bottom: var(--space-4);
 }
 .section-label::before {
@@ -263,7 +282,7 @@
   display: block;
   width: 20px;
   height: 1px;
-  background: var(--color-primary);
+  background: linear-gradient(90deg, var(--color-accent), transparent);
 }
 
 /* ---- DIVIDER ---- */
