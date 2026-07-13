@@ -16,7 +16,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta property="og:title" content="Grant Daniels — Revenue Intelligence Systems & AI-Powered Product Builder" />
   <meta property="og:description" content="Revenue intelligence systems, AI agent orchestration, and full-stack product development. Creator of Liquid Cosmos. Based in Austin, TX." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://grantdaniels.me/" />
+  <meta property="og:image" content="https://grantdaniels.me/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Grant Daniels — Fractional CMO & AI Architect" />
+  <meta name="twitter:description" content="Revenue intelligence systems that close the loop between marketing and closed revenue. Available for new clients." />
+  <meta name="twitter:image" content="https://grantdaniels.me/assets/og-image.png" />
   <link rel="canonical" href="https://grantdaniels.me/" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/favicon.svg" />
 
   <!-- Fonts -->
   <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet" />
@@ -85,7 +95,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="hero__glow" aria-hidden="true"></div>
     <div class="container hero__content">
       <div class="hero__badge fade-in">
-        <span class="tag tag--teal">Available for consulting</span>
+        <span class="status-badge">
+          <span class="status-dot" aria-hidden="true"></span>
+          Available now &mdash; taking on a new client
+        </span>
       </div>
       <h1 class="hero__heading fade-in" id="hero-heading">
         I build the software<br>
@@ -388,16 +401,68 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </section>
 
   <!-- ===== CTA STRIP ===== -->
-  <section class="cta-strip section--sm" aria-labelledby="cta-heading">
+  <section class="section section--sm contact" id="contact" aria-labelledby="contact-heading">
     <div class="container">
-      <div class="cta-strip__inner fade-in">
-        <div class="cta-strip__glow" aria-hidden="true"></div>
-        <h2 id="cta-heading">Got a problem that needs solving?</h2>
-        <p>I take on a small number of consulting engagements at a time — revenue intelligence builds, AI systems, full-stack development. If you've got something worth building, let's talk about it.</p>
-        <a href="mailto:grant@grantdaniels.me" class="btn btn--primary">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          grant@grantdaniels.me
-        </a>
+      <div class="section__head fade-in">
+        <p class="section-label">Get in touch</p>
+        <h2 id="contact-heading">Let's build something worth building.</h2>
+      </div>
+      <div class="contact-grid fade-in">
+
+        <!-- Contact form -->
+        <div class="form-card">
+          <p class="form-card__label">Work with me</p>
+          <h3 class="form-card__title">Start a conversation</h3>
+          <p class="form-card__desc">I take on a small number of engagements at a time — revenue intelligence builds, AI systems, fractional CMO work, full-stack development. Tell me what you're working on.</p>
+
+          <div class="form-success" id="contactSuccess" role="status">Thanks — your message is on its way. I'll get back to you within a day or two.</div>
+
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?ok=contact#contact">
+            <input type="hidden" name="form-name" value="contact" />
+            <p class="form-hidden"><label>Don't fill this out if you're human: <input name="bot-field" /></label></p>
+            <div class="form-field">
+              <label for="c-name">Name</label>
+              <input class="form-input" type="text" id="c-name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-field">
+              <label for="c-email">Email</label>
+              <input class="form-input" type="email" id="c-email" name="email" placeholder="you@company.com" required />
+            </div>
+            <div class="form-field">
+              <label for="c-message">What are you working on?</label>
+              <textarea class="form-textarea" id="c-message" name="message" placeholder="A few sentences about your project, timeline, and what you need." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send message
+            </button>
+            <p class="form-note">Prefer email? <a href="mailto:grant@grantdaniels.me">grant@grantdaniels.me</a></p>
+          </form>
+        </div>
+
+        <!-- Newsletter form -->
+        <div class="form-card">
+          <p class="form-card__label">Newsletter</p>
+          <h3 class="form-card__title">Get the field notes</h3>
+          <p class="form-card__desc">Occasional notes on AI systems, founder tools, and building for neurodivergent brains. No spam, no fluff — unsubscribe anytime.</p>
+
+          <div class="form-success" id="newsletterSuccess" role="status">You're in. Watch your inbox for the next note.</div>
+
+          <form name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?ok=newsletter#contact">
+            <input type="hidden" name="form-name" value="newsletter" />
+            <p class="form-hidden"><label>Don't fill this out if you're human: <input name="bot-field" /></label></p>
+            <div class="form-field">
+              <label for="n-email">Email</label>
+              <input class="form-input" type="email" id="n-email" name="email" placeholder="you@email.com" required />
+            </div>
+            <button type="submit" class="btn btn--outline">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Subscribe
+            </button>
+            <p class="form-note">Join founders and operators who read the notes.</p>
+          </form>
+        </div>
+
       </div>
     </div>
   </section>
@@ -412,7 +477,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <ul class="footer__links" role="list">
         <li><a href="portfolio.html"  class="footer__link">Portfolio</a></li>
         <li><a href="blog.html"       class="footer__link">Blog</a></li>
-        <li><a href="https://linkedin.com/in/grantdaniels" class="footer__link" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://linkedin.com/in/grantdaniels23" class="footer__link" target="_blank" rel="noopener">LinkedIn</a></li>
         <li><a href="https://github.com/cgdaniels23"      class="footer__link" target="_blank" rel="noopener">GitHub</a></li>
         <li><a href="mailto:grant@grantdaniels.me"         class="footer__link">Email</a></li>
       </ul>
@@ -452,6 +517,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       const diff = startX - e.changedTouches[0].clientX;
       if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
     }, { passive: true });
+  })();
+</script>
+<script>
+  // Show form success message after Netlify redirect (?ok=contact|newsletter)
+  (function () {
+    const params = new URLSearchParams(window.location.search);
+    const ok = params.get('ok');
+    if (ok === 'contact') document.getElementById('contactSuccess')?.classList.add('is-visible');
+    if (ok === 'newsletter') document.getElementById('newsletterSuccess')?.classList.add('is-visible');
   })();
 </script>
 </body>

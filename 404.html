@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page not found — Grant Daniels</title>
+  <meta name="description" content="That page doesn't exist. Head back to grantdaniels.me." />
+  <meta name="robots" content="noindex" />
+  <link rel="canonical" href="https://grantdaniels.me/404" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/favicon.svg" />
+
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/tokens.css" />
+  <link rel="stylesheet" href="/css/base.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/home.css" />
+  <style>
+    .err {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: var(--space-8);
+      position: relative;
+      overflow: hidden;
+    }
+    .err__glow {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 50% 40% at 30% 30%, var(--color-primary-glow) 0%, transparent 60%),
+        radial-gradient(ellipse 45% 40% at 75% 70%, var(--color-accent-glow, rgba(45,212,191,0.15)) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .err__code {
+      position: relative;
+      font-family: var(--font-display);
+      font-size: clamp(5rem, 18vw, 11rem);
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      line-height: 0.9;
+      background: linear-gradient(135deg, var(--color-text) 0%, var(--color-accent) 55%, var(--color-primary) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: var(--space-6);
+    }
+    .err__badge {
+      position: relative;
+      margin-bottom: var(--space-6);
+    }
+    .err__title {
+      position: relative;
+      font-family: var(--font-display);
+      font-size: clamp(var(--text-2xl), 5vw, var(--text-4xl));
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin-bottom: var(--space-4);
+    }
+    .err__desc {
+      position: relative;
+      font-size: var(--text-base);
+      color: var(--color-text-muted);
+      max-width: 46ch;
+      margin: 0 auto var(--space-8);
+      line-height: 1.6;
+    }
+    .err__actions {
+      position: relative;
+      display: flex;
+      gap: var(--space-3);
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: var(--space-10);
+    }
+    .err__links {
+      position: relative;
+      display: flex;
+      gap: var(--space-5);
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size: var(--text-sm);
+    }
+    .err__links a { color: var(--color-text-muted); transition: color 0.2s; }
+    .err__links a:hover { color: var(--color-accent); }
+    .err__logo {
+      position: absolute;
+      top: var(--space-8);
+      left: 50%;
+      transform: translateX(-50%);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-family: var(--font-display);
+      font-weight: 700;
+      color: var(--color-text);
+    }
+  </style>
+</head>
+<body>
+  <main class="err noise-bg">
+    <div class="err__glow" aria-hidden="true"></div>
+
+    <a href="/" class="err__logo" aria-label="Grant Daniels Home">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="28" height="28" rx="6" fill="var(--color-primary)" opacity="0.12"/>
+        <path d="M7 14.5C7 10.358 10.358 7 14.5 7C16.96 7 19.14 8.19 20.5 10.04L17.8 11.6C16.97 10.62 15.79 10 14.5 10C12.015 10 10 12.015 10 14.5C10 16.985 12.015 19 14.5 19C16.13 19 17.56 18.12 18.36 16.8H14.5V14H21.5V14.5C21.5 18.642 18.142 22 14 22C9.858 22 7 18.642 7 14.5Z" fill="var(--color-primary)"/>
+      </svg>
+      Grant Daniels
+    </a>
+
+    <p class="err__code">404</p>
+    <div class="err__badge">
+      <span class="status-badge"><span class="status-dot" aria-hidden="true"></span> Lost in the pipeline</span>
+    </div>
+    <h1 class="err__title">This page doesn't exist.</h1>
+    <p class="err__desc">Either the link is broken or the page moved. No dead ends here — let's get you back to something useful.</p>
+
+    <div class="err__actions">
+      <a href="/" class="btn btn--primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        Back home
+      </a>
+      <a href="/portfolio.html" class="btn btn--outline">See my work</a>
+    </div>
+
+    <nav class="err__links" aria-label="Site links">
+      <a href="/portfolio.html">Portfolio</a>
+      <a href="/skills/">Skills</a>
+      <a href="/experience/">Experience</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+  </main>
+
+  <script src="/js/nav.js" defer></script>
+</body>
+</html>

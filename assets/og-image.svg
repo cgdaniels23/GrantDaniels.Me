@@ -1,0 +1,59 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0a0a0b"/>
+      <stop offset="1" stop-color="#121016"/>
+    </linearGradient>
+    <radialGradient id="glowV" cx="0" cy="0" r="1" gradientTransform="translate(260 150) rotate(45) scale(520)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8b5cf6" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowT" cx="0" cy="0" r="1" gradientTransform="translate(1050 560) rotate(-135) scale(480)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2dd4bf" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sheen" x1="90" y1="0" x2="90" y2="180" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#e8e9ee"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glowV)"/>
+  <rect width="1200" height="630" fill="url(#glowT)"/>
+
+  <!-- subtle grid -->
+  <g stroke="#ffffff" stroke-opacity="0.04">
+    <line x1="0" y1="157" x2="1200" y2="157"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="472" x2="1200" y2="472"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+  </g>
+
+  <!-- logo mark -->
+  <g transform="translate(90 88)">
+    <rect width="88" height="88" rx="20" fill="#8b5cf6"/>
+    <path d="M22 45.4C22 34.0 31.2 24.8 42.6 24.8C49.4 24.8 55.4 28.1 59.1 33.2L51.7 37.4C49.4 34.7 46.2 33 42.6 33C35.8 33 30.3 38.5 30.3 45.4C30.3 52.2 35.8 57.8 42.6 57.8C47.1 57.8 51.0 55.3 53.2 51.7H42.6V43.9H62.0V45.4C62.0 56.8 52.8 66.0 41.4 66.0C30.0 66.0 22 56.8 22 45.4Z" fill="#ffffff"/>
+  </g>
+  <text x="200" y="148" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#ffffff" letter-spacing="-0.5">Grant Daniels</text>
+
+  <!-- availability pill -->
+  <g transform="translate(90 250)">
+    <rect width="270" height="46" rx="23" fill="#2dd4bf" fill-opacity="0.12" stroke="#2dd4bf" stroke-opacity="0.5"/>
+    <circle cx="30" cy="23" r="6" fill="#2dd4bf"/>
+    <text x="50" y="30" font-family="Arial, sans-serif" font-size="19" font-weight="600" fill="#5eead4" letter-spacing="0.5">Available for new clients</text>
+  </g>
+
+  <!-- headline -->
+  <text x="88" y="380" font-family="Arial, sans-serif" font-size="76" font-weight="800" fill="#ffffff" letter-spacing="-2">Fractional CMO</text>
+  <text x="88" y="466" font-family="Arial, sans-serif" font-size="76" font-weight="800" letter-spacing="-2"><tspan fill="#ffffff">&amp; </tspan><tspan fill="#8b5cf6">AI Architect</tspan></text>
+
+  <!-- subline -->
+  <text x="90" y="540" font-family="Arial, sans-serif" font-size="27" font-weight="400" fill="#a1a1aa">Revenue intelligence systems that close the loop</text>
+  <text x="90" y="576" font-family="Arial, sans-serif" font-size="27" font-weight="400" fill="#a1a1aa">between marketing and closed revenue.</text>
+
+  <!-- url -->
+  <text x="1110" y="576" text-anchor="end" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="#2dd4bf">grantdaniels.me</text>
+</svg>
