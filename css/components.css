@@ -518,3 +518,44 @@
 @media (prefers-reduced-motion: reduce) {
   .status-dot::after { animation: none; opacity: 0; }
 }
+
+/* ============================================================
+   EDUCATION BLOCK (experience page)
+   ============================================================ */
+.edu-block {
+  margin-top: var(--space-12);
+  padding-top: var(--space-10);
+  border-top: 1px solid var(--color-border);
+}
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-5);
+  margin-top: var(--space-6);
+}
+.edu-item {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+}
+.edu-item h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: var(--space-1);
+}
+.edu-item span {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+.edu-certs {
+  margin-top: var(--space-6);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+@media (max-width: 640px) {
+  .edu-grid { grid-template-columns: 1fr; }
+}
