@@ -4,5 +4,6 @@
 /skills.html      /skills/       301
 /blog.html        /blog/         301
 /experience.html  /experience/   301
+/contact.html     /contact/      301
 
 # Portfolio and product pages are actual .html files at root — no redirect needed.

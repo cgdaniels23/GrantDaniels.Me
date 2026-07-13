@@ -61,6 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <li><a href="skills.html"     class="nav__link">Skills</a></li>
         <li><a href="experience.html" class="nav__link">Experience</a></li>
         <li><a href="blog.html"       class="nav__link">Blog</a></li>
+        <li><a href="contact.html"    class="nav__link">Contact</a></li>
       </ul>
     </nav>
 
@@ -68,7 +69,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <button class="nav__theme-btn" data-theme-toggle aria-label="Toggle theme">
         <!-- Icon injected by JS -->
       </button>
-      <a href="mailto:grant@grantdaniels.me" class="nav__cta">Get in touch</a>
+      <a href="contact.html" class="nav__cta">Get in touch</a>
     </div>
 
     <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
@@ -84,7 +85,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a href="skills.html"     class="nav__link">Skills</a>
   <a href="experience.html" class="nav__link">Experience</a>
   <a href="blog.html"       class="nav__link">Blog</a>
-  <a href="mailto:grant@grantdaniels.me" class="nav__cta btn btn--primary">Get in touch</a>
+  <a href="contact.html"    class="nav__link">Contact</a>
+  <a href="contact.html" class="nav__cta btn btn--primary">Get in touch</a>
 </div>
 
 <main id="main">
@@ -97,7 +99,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="hero__badge fade-in">
         <span class="status-badge">
           <span class="status-dot" aria-hidden="true"></span>
-          Available now &mdash; taking on a new client
+          Currently accepting new clients
         </span>
       </div>
       <h1 class="hero__heading fade-in" id="hero-heading">
@@ -401,68 +403,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </section>
 
   <!-- ===== CTA STRIP ===== -->
-  <section class="section section--sm contact" id="contact" aria-labelledby="contact-heading">
+  <section class="cta-strip section--sm" id="contact" aria-labelledby="cta-heading">
     <div class="container">
-      <div class="section__head fade-in">
-        <p class="section-label">Get in touch</p>
-        <h2 id="contact-heading">Let's build something worth building.</h2>
-      </div>
-      <div class="contact-grid fade-in">
-
-        <!-- Contact form -->
-        <div class="form-card">
-          <p class="form-card__label">Work with me</p>
-          <h3 class="form-card__title">Start a conversation</h3>
-          <p class="form-card__desc">I take on a small number of engagements at a time — revenue intelligence builds, AI systems, fractional CMO work, full-stack development. Tell me what you're working on.</p>
-
-          <div class="form-success" id="contactSuccess" role="status">Thanks — your message is on its way. I'll get back to you within a day or two.</div>
-
-          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?ok=contact#contact">
-            <input type="hidden" name="form-name" value="contact" />
-            <p class="form-hidden"><label>Don't fill this out if you're human: <input name="bot-field" /></label></p>
-            <div class="form-field">
-              <label for="c-name">Name</label>
-              <input class="form-input" type="text" id="c-name" name="name" placeholder="Your name" required />
-            </div>
-            <div class="form-field">
-              <label for="c-email">Email</label>
-              <input class="form-input" type="email" id="c-email" name="email" placeholder="you@company.com" required />
-            </div>
-            <div class="form-field">
-              <label for="c-message">What are you working on?</label>
-              <textarea class="form-textarea" id="c-message" name="message" placeholder="A few sentences about your project, timeline, and what you need." required></textarea>
-            </div>
-            <button type="submit" class="btn btn--primary">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-              Send message
-            </button>
-            <p class="form-note">Prefer email? <a href="mailto:grant@grantdaniels.me">grant@grantdaniels.me</a></p>
-          </form>
-        </div>
-
-        <!-- Newsletter form -->
-        <div class="form-card">
-          <p class="form-card__label">Newsletter</p>
-          <h3 class="form-card__title">Get the field notes</h3>
-          <p class="form-card__desc">Occasional notes on AI systems, founder tools, and building for neurodivergent brains. No spam, no fluff — unsubscribe anytime.</p>
-
-          <div class="form-success" id="newsletterSuccess" role="status">You're in. Watch your inbox for the next note.</div>
-
-          <form name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?ok=newsletter#contact">
-            <input type="hidden" name="form-name" value="newsletter" />
-            <p class="form-hidden"><label>Don't fill this out if you're human: <input name="bot-field" /></label></p>
-            <div class="form-field">
-              <label for="n-email">Email</label>
-              <input class="form-input" type="email" id="n-email" name="email" placeholder="you@email.com" required />
-            </div>
-            <button type="submit" class="btn btn--outline">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              Subscribe
-            </button>
-            <p class="form-note">Join founders and operators who read the notes.</p>
-          </form>
-        </div>
-
+      <div class="cta-strip__inner fade-in">
+        <div class="cta-strip__glow" aria-hidden="true"></div>
+        <span class="status-badge" style="margin-bottom: var(--space-5);">
+          <span class="status-dot" aria-hidden="true"></span>
+          Currently accepting new clients
+        </span>
+        <h2 id="cta-heading">Let's build something worth building.</h2>
+        <p>Got a project in mind &mdash; revenue intelligence, AI systems, fractional CMO work, full-stack builds? Or just want to stay in the loop? Start a conversation or subscribe to the field notes.</p>
+        <a href="contact.html" class="btn btn--primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          Get in touch
+        </a>
       </div>
     </div>
   </section>
@@ -517,15 +471,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       const diff = startX - e.changedTouches[0].clientX;
       if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
     }, { passive: true });
-  })();
-</script>
-<script>
-  // Show form success message after Netlify redirect (?ok=contact|newsletter)
-  (function () {
-    const params = new URLSearchParams(window.location.search);
-    const ok = params.get('ok');
-    if (ok === 'contact') document.getElementById('contactSuccess')?.classList.add('is-visible');
-    if (ok === 'newsletter') document.getElementById('newsletterSuccess')?.classList.add('is-visible');
   })();
 </script>
 </body>
