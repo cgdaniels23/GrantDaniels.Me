@@ -599,3 +599,53 @@
   max-width: 540px;
   margin: 0 auto var(--space-7);
 }
+
+/* ============================================================
+   MISSION / MANIFESTO
+   ============================================================ */
+.mission__inner {
+  position: relative;
+  overflow: hidden;
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: center;
+  padding: clamp(var(--space-10), 6vw, var(--space-16)) clamp(var(--space-5), 4vw, var(--space-10));
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl, 1.25rem);
+}
+.mission__glow {
+  position: absolute;
+  bottom: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 620px;
+  height: 620px;
+  background: radial-gradient(circle, var(--color-accent-glow, rgba(45,212,191,0.12)) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+.mission__inner > * { position: relative; z-index: 1; }
+.mission__heading {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3.6vw, 2.4rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: var(--space-3) 0 var(--space-6);
+}
+.mission__heading-accent { color: var(--color-primary); }
+.mission__body {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.mission__body p {
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin-bottom: var(--space-4);
+}
+.mission__body p:last-child { margin-bottom: 0; }
+.mission__body strong {
+  color: var(--color-accent-hover);
+  font-weight: 600;
+}
