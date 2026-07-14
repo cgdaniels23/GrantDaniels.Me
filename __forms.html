@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Netlify form definitions</title>
+  <meta name="robots" content="noindex" />
+</head>
+<body>
+  <!--
+    Hidden page that exists ONLY so Netlify's build-time form parser
+    reliably detects our forms, regardless of HTML post-processing.
+    The real, user-facing versions live on /contact/. Field names here
+    MUST match the real forms exactly.
+  -->
+
+  <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="hidden" name="form-name" value="contact" />
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <input type="text" name="company" />
+    <textarea name="message"></textarea>
+    <input name="bot-field" />
+  </form>
+
+  <form name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="hidden" name="form-name" value="newsletter" />
+    <input type="email" name="email" />
+    <input name="bot-field" />
+  </form>
+
+</body>
+</html>

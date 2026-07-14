@@ -1,0 +1,28 @@
+# Netlify build & post-processing config
+#
+# HTML post-processing was stripping the `data-netlify="true"` and
+# `netlify-honeypot` attributes off our <form> tags, which broke Netlify
+# Forms detection (the Forms tab showed "no forms"). Disabling HTML
+# processing preserves the form markup exactly as authored so the form
+# parser can detect it. Pretty URLs are still handled by _redirects.
+
+[build]
+  publish = "."
+
+# CSS/JS minification is fine to keep on; only HTML processing is the problem.
+[build.processing]
+  skip_processing = false
+
+[build.processing.html]
+  pretty_urls = false
+
+[build.processing.css]
+  bundle = false
+  minify = true
+
+[build.processing.js]
+  bundle = false
+  minify = true
+
+[build.processing.images]
+  compress = true

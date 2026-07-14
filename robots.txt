@@ -1,0 +1,38 @@
+# robots.txt — grantdaniels.me
+# Allow all crawlers, including AI/LLM crawlers, full access.
+
+User-agent: *
+Allow: /
+
+# Explicitly welcome major AI crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Keep internal helper file out of the index
+Disallow: /__forms.html
+
+Sitemap: https://grantdaniels.me/sitemap.xml

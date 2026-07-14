@@ -25,8 +25,60 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta name="twitter:description" content="Revenue intelligence systems that close the loop between marketing and closed revenue. Available for new clients." />
   <meta name="twitter:image" content="https://grantdaniels.me/assets/og-image.png" />
   <link rel="canonical" href="https://grantdaniels.me/" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="apple-touch-icon" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#8b5cf6" />
+
+  <!-- Structured data: identifies Grant to Google + AI crawlers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://grantdaniels.me/#person",
+        "name": "Grant Daniels",
+        "url": "https://grantdaniels.me/",
+        "email": "cosmos.consulting.ai@gmail.com",
+        "image": "https://grantdaniels.me/assets/og-image.png",
+        "jobTitle": "Fractional CMO & AI Architect",
+        "description": "Senior marketing leader turned builder. Builds revenue intelligence systems and AI agent platforms. Self-described vibe coder on a mission to make AI-built software accessible to everyone.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Austin",
+          "addressRegion": "TX",
+          "addressCountry": "US"
+        },
+        "knowsAbout": ["AI agents", "Revenue intelligence", "Marketing strategy", "Vibe coding", "Full-stack web applications", "Marketing attribution"],
+        "sameAs": [
+          "https://linkedin.com/in/grantdaniels23",
+          "https://github.com/cgdaniels23"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Liquid Cosmos"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://grantdaniels.me/#website",
+        "url": "https://grantdaniels.me/",
+        "name": "Grant Daniels",
+        "description": "Fractional CMO and AI architect. Revenue intelligence systems and AI agent platforms.",
+        "publisher": { "@id": "https://grantdaniels.me/#person" },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://grantdaniels.me/#profilepage",
+        "url": "https://grantdaniels.me/",
+        "mainEntity": { "@id": "https://grantdaniels.me/#person" }
+      }
+    ]
+  }
+  </script>
 
   <!-- Fonts -->
   <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet" />

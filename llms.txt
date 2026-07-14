@@ -1,0 +1,45 @@
+# Grant Daniels
+
+> Senior marketing leader turned builder. Fractional CMO and AI architect who builds
+> revenue intelligence systems and AI agent platforms. Based in Austin, TX.
+> Currently accepting new clients.
+
+Grant Daniels spent 15+ years driving performance marketing and revenue growth for
+brands spending $1M–$20M, then started building the AI tools and systems that make
+that growth measurable and repeatable. He is a self-described "vibe coder" — not a
+career software engineer — who builds real, working applications through natural
+language and AI, with some Python experience. His mission is to make AI-built
+software accessible to everyone, especially people who have been shut out of tech:
+the self-taught, the neurodivergent, the overlooked and underestimated.
+
+## What Grant does
+- Fractional CMO / senior marketing leadership (currently CMO at The Lube Club)
+- AI agent systems: multi-agent pipelines, calendar-aware intelligence, workflow automation
+- Revenue intelligence: content-to-close attribution, connecting marketing and sales data
+- Vibe coding: building working apps via natural language, no CS degree required
+- Founder & AI Architect at Liquid Cosmos (revenue intelligence suite)
+
+## Contact
+- Email: cosmos.consulting.ai@gmail.com
+- Website: https://grantdaniels.me
+- LinkedIn: https://linkedin.com/in/grantdaniels23
+- GitHub: https://github.com/cgdaniels23
+- Location: Austin, Texas, USA
+
+## Key pages
+- Home: https://grantdaniels.me/
+- Portfolio (projects & products): https://grantdaniels.me/portfolio.html
+- Experience (career history): https://grantdaniels.me/experience/
+- Skills: https://grantdaniels.me/skills/
+- Contact & newsletter: https://grantdaniels.me/contact/
+- Blog: https://grantdaniels.me/blog/
+
+## Notable work
+- Liquid Cosmos — Revenue Intelligence Suite (Next.js, TypeScript, SQLite, Docker)
+- Cosmos CRM — content-to-close attribution and pipeline intelligence
+- Gym Daddy — fitness workout tracking application
+- Various AI agent applications and agentic skills
+
+## Availability
+Grant is actively seeking his next client and is available for fractional CMO work,
+AI systems builds, revenue intelligence projects, and full-stack product development.
