@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="../css/base.css" />
   <link rel="stylesheet" href="../css/components.css" />
   <link rel="stylesheet" href="../css/interior.css" />
+  <link rel="stylesheet" href="../css/wayfinder.css" />
   <meta property="og:image" content="https://grantdaniels.me/assets/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -53,6 +54,106 @@
   </script>
 </head>
 <body>
+  <div class="glow" aria-hidden="true"></div>
+  <div class="constellation-field" aria-hidden="true">
+    <div class="starlayer starlayer--far" data-depth="0.03">
+      <span class="star" style="top:39.75%;left:18.95%;--s:1.92px;--c:var(--gold);--dur:3.8s;--delay:2.8s;"></span>
+      <span class="star" style="top:85.25%;left:68.60%;--s:1.31px;--c:var(--gold);--dur:4.1s;--delay:2.4s;"></span>
+      <span class="star" style="top:44.18%;left:32.37%;--s:1.55px;--c:var(--gold);--dur:3.0s;--delay:1.9s;"></span>
+      <span class="star" style="top:86.13%;left:6.03%;--s:1.92px;--c:var(--gold);--dur:3.6s;--delay:0.8s;"></span>
+      <span class="star" style="top:17.67%;left:1.50%;--s:1.39px;--c:var(--violet);--dur:4.7s;--delay:3.1s;"></span>
+      <span class="star" style="top:2.50%;left:49.77%;--s:1.50px;--c:var(--lavender);--dur:3.6s;--delay:0.3s;"></span>
+      <span class="star" style="top:14.69%;left:1.37%;--s:1.30px;--c:var(--gold);--dur:4.2s;--delay:2.6s;"></span>
+      <span class="star" style="top:88.51%;left:10.40%;--s:1.61px;--c:var(--lavender);--dur:3.2s;--delay:2.8s;"></span>
+      <span class="star" style="top:97.58%;left:36.54%;--s:1.22px;--c:var(--teal);--dur:4.2s;--delay:2.3s;"></span>
+      <span class="star" style="top:60.34%;left:60.68%;--s:1.33px;--c:var(--gold);--dur:4.1s;--delay:2.1s;"></span>
+      <span class="star" style="top:57.12%;left:33.57%;--s:1.58px;--c:var(--gold);--dur:4.7s;--delay:3.2s;"></span>
+      <span class="star" style="top:92.67%;left:82.20%;--s:1.23px;--c:var(--lavender);--dur:4.8s;--delay:2.1s;"></span>
+      <span class="star" style="top:69.61%;left:78.31%;--s:1.43px;--c:var(--violet);--dur:2.7s;--delay:1.2s;"></span>
+      <span class="star" style="top:3.17%;left:55.92%;--s:1.36px;--c:var(--gold);--dur:4.2s;--delay:1.7s;"></span>
+      <span class="star" style="top:47.23%;left:13.62%;--s:1.51px;--c:var(--violet);--dur:4.1s;--delay:0.5s;"></span>
+      <span class="star" style="top:99.26%;left:89.39%;--s:1.44px;--c:var(--gold);--dur:2.8s;--delay:2.8s;"></span>
+      <span class="star" style="top:52.87%;left:56.29%;--s:1.55px;--c:var(--gold);--dur:4.2s;--delay:0.2s;"></span>
+      <span class="star" style="top:32.60%;left:19.95%;--s:1.51px;--c:var(--gold);--dur:3.6s;--delay:3.0s;"></span>
+      <span class="star" style="top:57.64%;left:82.37%;--s:1.51px;--c:var(--gold);--dur:3.3s;--delay:4.0s;"></span>
+      <span class="star" style="top:99.23%;left:99.02%;--s:1.52px;--c:var(--lavender);--dur:3.6s;--delay:2.8s;"></span>
+      <span class="star" style="top:40.21%;left:80.95%;--s:1.47px;--c:var(--lavender);--dur:3.0s;--delay:0.8s;"></span>
+      <span class="star" style="top:84.70%;left:69.36%;--s:1.60px;--c:var(--lavender);--dur:4.7s;--delay:2.9s;"></span>
+      <span class="star" style="top:77.25%;left:88.18%;--s:1.36px;--c:var(--lavender);--dur:2.9s;--delay:0.7s;"></span>
+      <span class="star" style="top:9.49%;left:73.68%;--s:1.56px;--c:var(--gold);--dur:3.1s;--delay:4.0s;"></span>
+      <span class="star" style="top:45.21%;left:13.27%;--s:1.71px;--c:var(--gold);--dur:4.3s;--delay:3.8s;"></span>
+      <span class="star" style="top:67.57%;left:16.40%;--s:1.47px;--c:var(--violet);--dur:2.7s;--delay:1.2s;"></span>
+      <span class="star" style="top:7.45%;left:22.64%;--s:1.65px;--c:var(--lavender);--dur:3.2s;--delay:1.2s;"></span>
+      <span class="star" style="top:87.64%;left:85.30%;--s:1.51px;--c:var(--lavender);--dur:4.7s;--delay:1.2s;"></span>
+      <span class="star" style="top:24.87%;left:13.51%;--s:1.26px;--c:var(--gold);--dur:4.1s;--delay:3.3s;"></span>
+      <span class="star" style="top:78.40%;left:31.58%;--s:1.37px;--c:var(--lavender);--dur:3.5s;--delay:3.0s;"></span>
+      <span class="star" style="top:73.23%;left:44.12%;--s:1.54px;--c:var(--gold);--dur:2.9s;--delay:1.2s;"></span>
+      <span class="star" style="top:69.67%;left:74.66%;--s:1.99px;--c:var(--lavender);--dur:4.4s;--delay:3.6s;"></span>
+      <span class="star" style="top:28.22%;left:32.67%;--s:1.86px;--c:var(--gold);--dur:3.4s;--delay:2.0s;"></span>
+      <span class="star" style="top:61.47%;left:60.13%;--s:1.99px;--c:var(--gold);--dur:3.4s;--delay:0.9s;"></span>
+      <span class="star" style="top:70.95%;left:18.07%;--s:1.22px;--c:var(--gold);--dur:4.3s;--delay:0.5s;"></span>
+      <span class="star" style="top:28.30%;left:44.45%;--s:1.66px;--c:var(--gold);--dur:4.4s;--delay:1.0s;"></span>
+      <span class="star" style="top:37.10%;left:69.93%;--s:1.59px;--c:var(--lavender);--dur:2.6s;--delay:1.4s;"></span>
+      <span class="star" style="top:99.16%;left:48.39%;--s:1.64px;--c:var(--gold);--dur:2.6s;--delay:1.5s;"></span>
+      <span class="star" style="top:37.08%;left:51.12%;--s:1.71px;--c:var(--violet);--dur:3.0s;--delay:2.6s;"></span>
+      <span class="star" style="top:21.24%;left:3.35%;--s:1.44px;--c:var(--teal);--dur:2.7s;--delay:2.2s;"></span>
+      <span class="star" style="top:12.81%;left:51.97%;--s:1.54px;--c:var(--lavender);--dur:4.5s;--delay:2.9s;"></span>
+      <span class="star" style="top:22.76%;left:25.13%;--s:1.46px;--c:var(--teal);--dur:4.5s;--delay:2.6s;"></span>
+      <span class="star" style="top:2.51%;left:49.17%;--s:1.87px;--c:var(--lavender);--dur:3.2s;--delay:2.3s;"></span>
+      <span class="star" style="top:8.43%;left:34.17%;--s:1.48px;--c:var(--lavender);--dur:4.7s;--delay:1.5s;"></span>
+      <span class="star" style="top:10.85%;left:7.64%;--s:1.70px;--c:var(--gold);--dur:3.0s;--delay:0.9s;"></span>
+      <span class="star" style="top:48.60%;left:83.52%;--s:1.95px;--c:var(--teal);--dur:3.1s;--delay:1.9s;"></span>
+      <span class="star" style="top:88.79%;left:1.63%;--s:1.73px;--c:var(--lavender);--dur:4.5s;--delay:0.5s;"></span>
+      <span class="star" style="top:97.65%;left:84.68%;--s:1.85px;--c:var(--gold);--dur:2.8s;--delay:0.8s;"></span>
+      <span class="star" style="top:52.58%;left:81.77%;--s:1.83px;--c:var(--gold);--dur:4.2s;--delay:0.7s;"></span>
+      <span class="star" style="top:82.49%;left:36.70%;--s:1.58px;--c:var(--lavender);--dur:2.6s;--delay:0.8s;"></span>
+      <span class="star" style="top:47.91%;left:90.89%;--s:1.45px;--c:var(--lavender);--dur:3.6s;--delay:0.9s;"></span>
+      <span class="star" style="top:1.65%;left:41.14%;--s:1.41px;--c:var(--lavender);--dur:3.3s;--delay:2.0s;"></span>
+    </div>
+    <div class="starlayer starlayer--mid" data-depth="0.06">
+      <span class="star" style="top:26.75%;left:73.17%;--s:2.64px;--c:var(--teal);--dur:4.4s;--delay:2.3s;"></span>
+      <span class="star" style="top:39.26%;left:26.23%;--s:2.36px;--c:var(--gold);--dur:4.1s;--delay:3.7s;"></span>
+      <span class="star" style="top:51.87%;left:82.31%;--s:2.23px;--c:var(--lavender);--dur:3.4s;--delay:3.7s;"></span>
+      <span class="star" style="top:65.83%;left:51.24%;--s:3.01px;--c:var(--gold);--dur:3.7s;--delay:3.2s;"></span>
+      <span class="star" style="top:22.52%;left:96.60%;--s:2.22px;--c:var(--gold);--dur:4.3s;--delay:2.5s;"></span>
+      <span class="star" style="top:98.59%;left:34.08%;--s:2.39px;--c:var(--gold);--dur:3.2s;--delay:2.2s;"></span>
+      <span class="star" style="top:36.32%;left:95.94%;--s:2.23px;--c:var(--lavender);--dur:3.3s;--delay:1.6s;"></span>
+      <span class="star" style="top:94.74%;left:66.21%;--s:2.97px;--c:var(--lavender);--dur:4.1s;--delay:2.3s;"></span>
+      <span class="star" style="top:60.42%;left:35.10%;--s:3.00px;--c:var(--violet);--dur:3.4s;--delay:0.1s;"></span>
+      <span class="star" style="top:48.18%;left:47.01%;--s:3.05px;--c:var(--gold);--dur:4.0s;--delay:3.9s;"></span>
+      <span class="star" style="top:27.17%;left:45.54%;--s:2.66px;--c:var(--gold);--dur:4.4s;--delay:2.4s;"></span>
+      <span class="star" style="top:94.30%;left:11.28%;--s:3.12px;--c:var(--gold);--dur:3.7s;--delay:1.9s;"></span>
+      <span class="star" style="top:72.28%;left:43.29%;--s:3.13px;--c:var(--gold);--dur:3.8s;--delay:0.3s;"></span>
+      <span class="star" style="top:67.94%;left:43.48%;--s:2.60px;--c:var(--gold);--dur:4.4s;--delay:2.5s;"></span>
+      <span class="star" style="top:92.16%;left:28.15%;--s:2.90px;--c:var(--gold);--dur:4.1s;--delay:1.9s;"></span>
+      <span class="star" style="top:62.20%;left:45.05%;--s:3.12px;--c:var(--gold);--dur:4.1s;--delay:0.9s;"></span>
+      <span class="star" style="top:6.29%;left:51.29%;--s:2.70px;--c:var(--lavender);--dur:4.0s;--delay:0.0s;"></span>
+      <span class="star" style="top:79.12%;left:1.00%;--s:2.72px;--c:var(--violet);--dur:3.2s;--delay:2.6s;"></span>
+      <span class="star" style="top:30.70%;left:82.94%;--s:3.19px;--c:var(--gold);--dur:3.7s;--delay:1.8s;"></span>
+      <span class="star" style="top:30.13%;left:85.19%;--s:3.18px;--c:var(--gold);--dur:4.6s;--delay:3.0s;"></span>
+      <span class="star" style="top:44.19%;left:43.63%;--s:2.96px;--c:var(--gold);--dur:3.3s;--delay:2.3s;"></span>
+      <span class="star" style="top:39.33%;left:92.15%;--s:3.04px;--c:var(--lavender);--dur:4.2s;--delay:0.3s;"></span>
+      <span class="star" style="top:72.63%;left:57.31%;--s:2.90px;--c:var(--gold);--dur:3.4s;--delay:1.9s;"></span>
+      <span class="star" style="top:49.75%;left:96.06%;--s:2.98px;--c:var(--violet);--dur:3.3s;--delay:3.5s;"></span>
+      <span class="star" style="top:38.80%;left:82.83%;--s:2.49px;--c:var(--gold);--dur:3.8s;--delay:3.1s;"></span>
+      <span class="star" style="top:64.09%;left:21.81%;--s:3.13px;--c:var(--lavender);--dur:4.2s;--delay:2.7s;"></span>
+    </div>
+    <div class="starlayer starlayer--near" data-depth="0.1">
+      <span class="star star--anchor" style="top:25.78%;left:54.14%;--s:3.96px;--c:var(--gold);--dur:3.7s;--delay:1.7s;"></span>
+      <span class="star star--anchor" style="top:64.93%;left:82.49%;--s:4.49px;--c:var(--gold);--dur:4.0s;--delay:2.1s;"></span>
+      <span class="star star--anchor" style="top:75.07%;left:50.28%;--s:4.37px;--c:#fff;--dur:4.3s;--delay:2.5s;"></span>
+      <span class="star star--anchor" style="top:17.61%;left:60.64%;--s:3.33px;--c:var(--gold);--dur:4.1s;--delay:1.0s;"></span>
+      <span class="star star--anchor" style="top:50.82%;left:74.86%;--s:4.71px;--c:#fff;--dur:3.7s;--delay:0.1s;"></span>
+      <span class="star star--anchor" style="top:71.39%;left:66.11%;--s:3.86px;--c:#fff;--dur:3.2s;--delay:1.5s;"></span>
+      <span class="star star--anchor" style="top:38.97%;left:68.97%;--s:3.87px;--c:#fff;--dur:3.6s;--delay:2.6s;"></span>
+      <span class="star star--anchor" style="top:49.45%;left:77.93%;--s:3.45px;--c:#fff;--dur:4.4s;--delay:1.8s;"></span>
+      <span class="star star--anchor" style="top:82.39%;left:54.00%;--s:3.49px;--c:var(--gold);--dur:4.3s;--delay:0.8s;"></span>
+      <span class="star star--anchor" style="top:38.76%;left:62.02%;--s:4.61px;--c:var(--gold);--dur:3.6s;--delay:2.1s;"></span>
+      <span class="star star--anchor" style="top:37.05%;left:90.42%;--s:3.93px;--c:#fff;--dur:4.4s;--delay:2.1s;"></span>
+      <span class="star star--anchor" style="top:52.82%;left:49.09%;--s:4.22px;--c:#fff;--dur:3.3s;--delay:1.8s;"></span>
+      <span class="star star--anchor" style="top:25.44%;left:56.85%;--s:3.95px;--c:#fff;--dur:4.0s;--delay:0.8s;"></span>
+    </div>
+  </div>
 
 <header class="nav" role="banner">
   <div class="nav__inner">
@@ -74,7 +175,6 @@
       </ul>
     </nav>
     <div class="nav__actions">
-      <button class="nav__theme-btn" data-theme-toggle aria-label="Toggle theme"></button>
       <a href="../contact.html" class="nav__cta">Get in touch</a>
     </div>
     <button class="nav__hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>

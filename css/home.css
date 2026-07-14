@@ -534,7 +534,7 @@
   line-height: 1;
   color: var(--color-primary);
   opacity: 0.15;
-  font-family: Georgia, serif;
+  font-family: var(--font-display);
   pointer-events: none;
 }
 .testimonial-hero p {

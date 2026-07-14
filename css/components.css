@@ -71,19 +71,6 @@
   gap: var(--space-3);
 }
 
-.nav__theme-btn {
-  width: 36px;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: var(--radius-md);
-  color: var(--color-text-muted);
-  cursor: pointer;
-  transition: color var(--transition-interactive), background var(--transition-interactive);
-}
-.nav__theme-btn:hover { color: var(--color-text); background: var(--color-surface-offset); }
-
 .nav__cta {
   font-size: var(--text-sm);
   font-weight: 600;
@@ -366,7 +353,7 @@
 
 /* ---- CODE / MONO ---- */
 .mono {
-  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-family: var(--font-body);
   font-size: 0.85em;
 }
 
