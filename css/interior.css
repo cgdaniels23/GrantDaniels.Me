@@ -96,9 +96,6 @@
 .astro-visual  {
   background: radial-gradient(ellipse at center, #0a0520 0%, var(--color-surface) 70%);
 }
-[data-theme="light"] .astro-visual {
-  background: radial-gradient(ellipse at center, #e8e4f0 0%, var(--color-surface) 70%);
-}
 
 .project-card__body {}
 .project-card__meta {

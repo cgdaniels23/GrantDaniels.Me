@@ -1,0 +1,192 @@
+/* ===================================================
+   WAYFINDER — visual language layer
+   Loaded last. Applies the approved dark-only star-field
+   design system on top of the existing component styles.
+   =================================================== */
+
+/* ---- STACKING: content sits above the star field ---- */
+body { position: relative; }
+body > main,
+body > footer,
+.nav,
+.nav__mobile-menu { position: relative; z-index: 1; }
+.nav { z-index: 100; }
+.nav__mobile-menu { z-index: 99; }
+
+/* ---- CORNER GLOW (behind hero / page header) ---- */
+.glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: min(95vh, 1000px);
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 780px 520px at 10% -8%, rgba(139,92,246,.32), transparent 60%),
+    radial-gradient(ellipse 620px 460px at 92% 4%, rgba(45,212,191,.20), transparent 60%),
+    radial-gradient(ellipse 500px 420px at 30% 45%, rgba(76,63,209,.16), transparent 65%),
+    radial-gradient(ellipse 640px 400px at 85% 70%, rgba(244,200,105,.08), transparent 65%);
+  filter: blur(6px);
+}
+
+/* ---- GRADIENT-TEXT HERO ACCENT ---- */
+.hero__heading--accent,
+.mission__heading-accent,
+.accent-text {
+  background: linear-gradient(100deg, var(--violet), var(--lavender) 45%, var(--teal) 88%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ---- NAV ---- */
+.nav {
+  border-bottom: 1px solid rgba(255,255,255,.05);
+  background: rgba(7,7,11,.55);
+}
+.nav__logo svg { filter: drop-shadow(0 0 8px rgba(139,92,246,.55)); }
+.nav__links a,
+.nav__link {
+  font-family: var(--font-body);
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+.nav__links a:hover,
+.nav__link:hover,
+.nav__link.active { color: var(--color-text); }
+
+.nav__cta {
+  background: linear-gradient(120deg, var(--violet), var(--indigo));
+  color: #fff;
+  transition: box-shadow .25s, transform .25s;
+}
+.nav__cta:hover {
+  background: linear-gradient(120deg, var(--violet), var(--indigo));
+  box-shadow: 0 0 28px rgba(139,92,246,.5);
+  transform: translateY(-1px);
+}
+
+/* ---- BUTTONS ---- */
+.btn--primary {
+  background: linear-gradient(120deg, var(--violet), var(--indigo));
+  color: #fff;
+  border-radius: var(--btn-radius);
+  position: relative;
+  overflow: hidden;
+}
+.btn--primary::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,.35), transparent);
+  transform: translateX(-120%);
+  transition: transform .5s;
+  pointer-events: none;
+}
+.btn--primary:hover::after { transform: translateX(120%); }
+.btn--primary:hover {
+  background: linear-gradient(120deg, var(--violet), var(--indigo));
+  box-shadow: 0 0 32px rgba(139,92,246,.5);
+}
+
+.btn--outline {
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  border-radius: var(--btn-radius);
+}
+.btn--outline:hover {
+  border-color: var(--teal);
+  color: var(--teal);
+}
+/* Hidden arrow that slides in on hover */
+.btn--outline .arrow {
+  display: inline-block;
+  opacity: 0;
+  max-width: 0;
+  overflow: hidden;
+  transform: translateX(-6px);
+  transition: all .25s cubic-bezier(.16,1,.3,1);
+}
+.btn--outline:hover .arrow {
+  opacity: 1;
+  max-width: 20px;
+  transform: translateX(0);
+  margin-left: 6px;
+}
+
+/* ---- CARDS: colored top border + eyebrow + hover pop ---- */
+.services__card,
+.card--wayfinder {
+  border-top: 2px solid var(--card-color, var(--color-border));
+  transition: transform .3s cubic-bezier(.16,1,.3,1),
+              background .3s cubic-bezier(.16,1,.3,1),
+              box-shadow .3s cubic-bezier(.16,1,.3,1),
+              border-color .3s cubic-bezier(.16,1,.3,1);
+}
+.services__card:hover,
+.card--wayfinder:hover {
+  transform: translateY(-6px) scale(1.01);
+  background: var(--surface2);
+  box-shadow: 0 20px 60px -12px var(--card-glow, rgba(139,92,246,.35));
+  border-color: color-mix(in srgb, var(--card-color, var(--color-border)) 60%, var(--color-border));
+}
+
+/* 4-color cycle, repeating for grids longer than 4 */
+.services__card:nth-child(4n+1), .card--wayfinder:nth-child(4n+1) { --card-color: var(--violet);   --card-glow: rgba(139,92,246,.45); }
+.services__card:nth-child(4n+2), .card--wayfinder:nth-child(4n+2) { --card-color: var(--teal);     --card-glow: rgba(45,212,191,.45); }
+.services__card:nth-child(4n+3), .card--wayfinder:nth-child(4n+3) { --card-color: var(--gold);     --card-glow: rgba(244,200,105,.40); }
+.services__card:nth-child(4n+4), .card--wayfinder:nth-child(4n+4) { --card-color: var(--lavender); --card-glow: rgba(196,181,253,.40); }
+
+.services__icon {
+  background: color-mix(in srgb, var(--card-color, var(--violet)) 14%, transparent);
+  color: var(--card-color, var(--color-primary));
+}
+
+.services__eyebrow,
+.card__eyebrow {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: .04em;
+  color: var(--card-color, var(--color-accent));
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.services__eyebrow .idx,
+.card__eyebrow .idx { font-weight: 700; opacity: .7; }
+
+/* ===================================================
+   FULL-PAGE GLOWING STAR FIELD — dots only, no lines
+   =================================================== */
+.constellation-field {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.starlayer {
+  position: absolute;
+  inset: -10% 0 0 0;
+  height: 120%;
+  pointer-events: none;
+  will-change: transform;
+}
+.star {
+  position: absolute;
+  width: var(--s);
+  height: var(--s);
+  border-radius: 50%;
+  background: var(--c);
+  box-shadow: 0 0 calc(var(--s) * 3.2) var(--c);
+  animation: twinkle var(--dur) ease-in-out infinite;
+  animation-delay: var(--delay);
+}
+.star--anchor { box-shadow: 0 0 calc(var(--s) * 4) var(--c); }
+@keyframes twinkle {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: .32; }
+}
