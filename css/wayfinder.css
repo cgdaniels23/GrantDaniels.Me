@@ -8,10 +8,11 @@
 body { position: relative; }
 body > main,
 body > footer,
-.nav,
-.nav__mobile-menu { position: relative; z-index: 1; }
+.nav { position: relative; z-index: 1; }
 .nav { z-index: 100; }
-.nav__mobile-menu { z-index: 99; }
+/* Drawer keeps its own positioning (fixed, from components.css @media);
+   only raise its stacking order when it is actually open on mobile. */
+.nav__mobile-menu.open { z-index: 99; }
 
 /* ---- CORNER GLOW (behind hero / page header) ---- */
 .glow {
