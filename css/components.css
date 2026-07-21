@@ -91,6 +91,10 @@
 }
 .nav__cta:active { transform: translateY(0); }
 
+/* Mobile drawer — hidden by default at ALL widths; only revealed
+   via .open inside the ≤768px media query below. */
+.nav__mobile-menu { display: none; }
+
 /* Hamburger */
 .nav__hamburger {
   display: none;
