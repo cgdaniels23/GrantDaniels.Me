@@ -279,8 +279,10 @@
 /* ---- DIVIDER ---- */
 .divider {
   border: none;
-  border-top: 1px solid var(--color-divider);
-  margin-block: var(--space-16);
+  height: 1px;
+  width: var(--divider-hairline-width);
+  margin: var(--space-16) auto;
+  background: var(--divider-hairline);
 }
 
 /* ---- PAGE HEADER ---- */
@@ -292,9 +294,20 @@
 
 /* ---- FOOTER ---- */
 .footer {
-  border-top: 1px solid var(--color-divider);
+  position: relative;
   padding-block: var(--space-12);
   margin-top: var(--space-24);
+}
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: var(--divider-hairline-width);
+  height: 1px;
+  background: var(--divider-hairline);
+  pointer-events: none;
 }
 .footer__inner {
   display: flex;
@@ -345,6 +358,10 @@
   background-size: 256px 256px;
   pointer-events: none;
   z-index: 0;
+  /* Grain stopping dead at the hero's bottom edge showed up as a seam running
+     the full width of the viewport, so it dissolves before it gets there. */
+  mask-image: linear-gradient(to bottom, black 0%, black 55%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 55%, transparent 100%);
 }
 
 /* ---- GRADIENT LINE ---- */

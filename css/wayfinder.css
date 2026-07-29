@@ -119,7 +119,10 @@ body > footer,
 /* ---- CARDS: colored top border + eyebrow + hover pop ---- */
 .services__card,
 .card--wayfinder {
-  border-top: 2px solid var(--card-color, var(--color-border));
+  /* A 2px fully-saturated rule on every card read as highlighter bars stacked
+     down the page. The accent now sits close to the weight of the rest of the
+     card border and only comes forward on hover. */
+  border-top: 1px solid color-mix(in srgb, var(--card-color, var(--color-border)) 45%, var(--color-border));
   transition: transform .3s cubic-bezier(.16,1,.3,1),
               background .3s cubic-bezier(.16,1,.3,1),
               box-shadow .3s cubic-bezier(.16,1,.3,1),

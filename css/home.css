@@ -2,6 +2,21 @@
    HOME PAGE — grantdaniels.me
    =================================================== */
 
+/* ---- SECTION TRANSITIONS ---- */
+main > section { position: relative; }
+
+main > section + section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: var(--divider-hairline-width);
+  height: 1px;
+  background: var(--divider-hairline);
+  pointer-events: none;
+}
+
 /* ---- HERO ---- */
 .hero {
   position: relative;
@@ -15,8 +30,11 @@
 .hero__grid-bg {
   position: absolute;
   inset: 0;
+  /* The horizontal rules sit far below the vertical ones on purpose: at equal
+     weight they read as a stack of full-width lines marching down the hero
+     rather than as depth behind it. */
   background-image:
-    linear-gradient(var(--color-border-subtle) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
     linear-gradient(90deg, var(--color-border-subtle) 1px, transparent 1px);
   background-size: 60px 60px;
   mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 30%, transparent 100%);
@@ -460,7 +478,7 @@
   position: absolute;
   inset: 0 0 auto 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, var(--color-sheen-strong), transparent);
+  background: linear-gradient(90deg, transparent, var(--color-sheen), transparent);
   pointer-events: none;
 }
 .stat:hover { border-color: var(--color-accent); }
